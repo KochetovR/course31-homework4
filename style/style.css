@@ -307,7 +307,7 @@ header {
   display: flex;
   margin: 0px 32px;
 }
-/* Не работает тут ховер на свг */
+
 .link-item > .container-link {
   display: block;
   padding: 12px;
@@ -330,7 +330,86 @@ header {
   height: 20px;
   fill: currentColor;
 }
+/* Clients */
+.clints-title {
+  padding-top: 94px;
+  margin-bottom: 50px;
 
+  font-style: normal;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.clients-icon {
+  display: flex;
+  padding-bottom: 94px;
+}
+.clients-container {
+  margin-right: 30px;
+}
+.clients-container:last-child {
+  margin-right: 0px;
+}
+
+.clients-container a:hover {
+  color: var(--accent-color);
+  cursor: pointer;
+}
+.clients-link {
+  display: block;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+
+  color: var(--primary-text-color);
+}
+
+.clients-link:hover {
+  border: 1px solid #2196f3;
+  cursor: pointer;
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+.clients-svg1 {
+  width: 44px;
+  height: 49px;
+
+  margin: 20px 63px;
+  fill: currentColor;
+}
+.clients-svg2 {
+  width: 40px;
+  height: 52px;
+  margin: 19px 65px;
+  fill: currentColor;
+}
+.clients-svg3 {
+  width: 41px;
+  height: 43px;
+  margin: 24px 64px 23px 65px;
+  fill: currentColor;
+}
+.clients-svg4 {
+  width: 80px;
+  height: 42px;
+  margin: 24px 45px;
+  fill: currentColor;
+}
+.clients-svg5 {
+  width: 59px;
+  height: 47px;
+  margin: 22px 55px 21px 56px;
+  fill: currentColor;
+}
+.clients-svg6 {
+  width: 88px;
+  height: 45px;
+  margin: 22px 41px;
+  fill: currentColor;
+}
 /* portfolio */
 .header-portfolio {
   border-bottom: 1px solid #ececec;
@@ -425,6 +504,10 @@ header {
 
   text-decoration: none;
 }
+.decor:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 /* footer */
 .footer-company {
   display: block;
@@ -460,4 +543,51 @@ header {
 .footer-contacts:focus,
 .footer-contacts:hover {
   color: var(--accent-color);
+}
+.footer-position {
+  display: flex;
+}
+
+.container-join {
+  margin-left: 70px;
+}
+
+.footer-appeal {
+  margin-top: 12px;
+  margin-bottom: 20px;
+
+  color: var(--primary-white-color);
+}
+
+.footer-list-svg {
+  display: flex;
+}
+.footer-mess {
+  margin-right: 10px;
+}
+.footer-mess:last-child {
+  margin-right: 0;
+}
+.footer-link-mess {
+  display: block;
+  width: 44px;
+  height: 44px;
+  /* margin-right: 10px; */
+
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-link-mess:hover,
+.footer-link-mess:focus {
+  background-color: var(--accent-color);
+}
+.footer-link-mess:last-child {
+}
+
+.footer-svg {
+  width: 20px;
+  height: 20px;
+  margin: 12px;
+  fill: var(--primary-white-color);
 }
