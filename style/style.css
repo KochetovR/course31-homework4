@@ -174,6 +174,7 @@ header {
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
 }
 .hero-button {
   display: block;
@@ -548,6 +549,7 @@ header {
 }
 .footer-position {
   display: flex;
+  align-items: baseline;
 }
 
 .container-join {
@@ -555,7 +557,6 @@ header {
 }
 
 .footer-appeal {
-  margin-top: 12px;
   margin-bottom: 20px;
 
   color: var(--primary-white-color);
@@ -574,7 +575,6 @@ header {
   display: block;
   width: 44px;
   height: 44px;
-  /* margin-right: 10px; */
 
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
