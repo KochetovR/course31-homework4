@@ -9,6 +9,7 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --primary-black-color: #000000;
+  --svg-team-color: #afb1b8;
   --footer-color: rgba(255, 255, 255, 0.6);
 
   --secondary-backgroung-color: #f5f4fa;
@@ -85,6 +86,7 @@ header {
 .header-contacts {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 
 .header-contacts .item:first-child {
@@ -123,24 +125,23 @@ header {
   padding: 32px 0;
 
   color: var(--primary-text-color);
+  fill: var(--primary-text-color);
   text-decoration: none;
 }
-/*  Не работает тут ховер на свг */
 .nav-contacts:focus,
 .nav-contacts:hover {
   color: var(--accent-color);
+  fill: currentColor;
 }
 .svg-mail {
   margin-right: 10px;
   width: 16px;
   height: 12px;
-  fill: currentColor;
 }
 .svg-tel {
   margin-right: 10px;
   width: 10px;
   height: 16px;
-  fill: currentColor;
 }
 
 /* hero */
@@ -307,6 +308,7 @@ header {
 .team-links {
   display: flex;
   margin: 0px 32px;
+  justify-content: space-between;
 }
 
 .link-item > .container-link {
@@ -316,6 +318,7 @@ header {
   height: 44px;
   margin-right: 10px;
   color: var(--primary-text-color);
+  fill: var(--svg-team-color);
 }
 .container-link:last-child {
   margin-right: 0px;
@@ -325,11 +328,11 @@ header {
   background-color: var(--accent-color);
   border-radius: 50%;
   color: var(--primary-white-color);
+  fill: currentColor;
 }
 .team-svg {
   width: 20px;
   height: 20px;
-  fill: currentColor;
 }
 /* Clients */
 .clints-title {
@@ -365,51 +368,47 @@ header {
   border-radius: 4px;
 
   color: var(--primary-text-color);
+  fill: var(--primary-text-color);
 }
 
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid #2196f3;
   cursor: pointer;
   color: var(--accent-color);
+  fill: var(--accent-color);
   cursor: pointer;
 }
 
 .clients-svg1 {
   width: 44px;
   height: 49px;
-
   margin: 20px 63px;
-  fill: currentColor;
 }
 .clients-svg2 {
   width: 40px;
   height: 52px;
   margin: 19px 65px;
-  fill: currentColor;
 }
 .clients-svg3 {
   width: 41px;
   height: 43px;
   margin: 24px 64px 23px 65px;
-  fill: currentColor;
 }
 .clients-svg4 {
   width: 80px;
   height: 42px;
   margin: 24px 45px;
-  fill: currentColor;
 }
 .clients-svg5 {
   width: 59px;
   height: 47px;
   margin: 22px 55px 21px 56px;
-  fill: currentColor;
 }
 .clients-svg6 {
   width: 88px;
   height: 45px;
   margin: 22px 41px;
-  fill: currentColor;
 }
 /* portfolio */
 .header-portfolio {
@@ -449,7 +448,7 @@ header {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.62x;
+  line-height: 1.62;
   text-align: center;
 }
 .button:focus,
@@ -559,6 +558,7 @@ header {
 .footer-appeal {
   margin-bottom: 20px;
 
+  font-weight: bold;
   color: var(--primary-white-color);
 }
 
